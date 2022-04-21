@@ -1,0 +1,52 @@
+.lista-hoteles > div{
+    -webkit-box-shadow: 0px -1px 14px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -1px 14px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px -1px 14px -3px rgba(0,0,0,0.75);
+}
+
+.lista-hoteles {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+
+@media (min-width: 720px){
+    .lista-hoteles {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+    }
+}
+
+@media (min-width: 980px){
+    .lista-hoteles {
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+    }
+}
+
+.modal { 
+    overflow: auto !important;
+}
+
+.modal-loading .modal-content {
+    background-color: transparent;
+    border: none;
+}
+
+.modal-loading .modal-dialog {
+
+    height: 90%;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    overflow-y: auto;
+
+}
+
+.spinner-border.text-light {
+    height: 80px;
+    width: 80px;
+}
